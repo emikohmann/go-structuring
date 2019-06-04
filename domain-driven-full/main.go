@@ -5,11 +5,11 @@ import (
     "github.com/emikohmann/go-structuring/domain-driven/http"
     "github.com/mercadolibre/go-meli-toolkit/gingonic/mlhandlers"
     "github.com/emikohmann/go-structuring/domain-driven/repository/ds"
-    "github.com/emikohmann/go-structuring/domain-driven/repository/db"
+    "github.com/emikohmann/go-structuring/domain-driven-full/repository/db"
 )
 
 func main() {
-   // repo := ds.New()
+    //repo := ds.New()
     repo := db.New()
     serv := ban.NewService(repo)
 
